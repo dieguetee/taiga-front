@@ -8,7 +8,7 @@ exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     framework: 'mocha',
     mochaOpts: {
-        timeout: 5000
+        timeout: 11000
     },
     suites: {
         auth: 'e2e/auth/*.e2e.js',

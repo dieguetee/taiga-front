@@ -68,7 +68,7 @@ common.prepare = function() {
 
 common.dragEnd = function(elm) {
     return browser.wait(async function() {
-        let count = await element.all(by.css('.ui-sortable-helper')).count()
+        let count = await $$('.ui-sortable-helper').count();
 
         return count === 0;
     }, 1000);
